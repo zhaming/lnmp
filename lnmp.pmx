@@ -1,0 +1,17 @@
+---
+name: lnmp
+description: the template of coreos
+keywords: ''
+type: LAMP
+documentation: ''
+images:
+- name: wubin_lnmp_v1_latest
+  source: wubin/lnmp_v1:latest
+  type: Default
+  ports:
+  - host_port: '8888'
+    container_port: '80'
+    proto: TCP
+  volumes:
+  - host_path: "/var/panamax/share"
+    container_path: "/opt/web/www"

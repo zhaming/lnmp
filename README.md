@@ -1,0 +1,4 @@
+lnmp
+====
+
+the coreos template
